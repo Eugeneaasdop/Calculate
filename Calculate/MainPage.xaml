@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculate.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="25" Padding="30,0" VerticalOptions="Center">
+            <Entry x:Name="EntryA" WidthRequest="200" HorizontalOptions="Center"/>
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+                <Button x:Name="ButtonAdd" Text="+" Clicked="OnButtonClick"/>
+                <Button x:Name="ButtonSub" Text="-" Clicked="OnButtonClick"/>
+                <Button x:Name="ButtonMul" Text="x" Clicked="OnButtonClick"/>
+                <Button x:Name="ButtonDev" Text="/" Clicked="OnButtonClick"/>
+            </HorizontalStackLayout>
+            <Entry x:Name="EntryB" WidthRequest="200" HorizontalOptions="Center"/>
+            <Label x:Name="LabelResult" Text="--" SemanticProperties.HeadingLevel="Level1" FontSize="32" HorizontalOptions="Center" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
